@@ -1,0 +1,66 @@
+.Card {
+  background: #feee03;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .header_card {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      p {
+        font-size: 2.7rem;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        letter-spacing: 0.3rem;
+        cursor: pointer;
+      }
+
+      .image_container {
+        display: inline-block;
+        background-color: yellow;
+        padding: 10px;
+      }
+
+      .image_container img {
+        display: block;
+
+        height: 150px;
+      }
+    }
+
+    .aside {
+      background: #fceec9;
+      width: 700px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+      gap: 25px;
+      padding: 4px;
+    }
+
+    .card_item {
+      background: #9edef9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px;
+      border-radius: 10px;
+
+      img {
+        cursor: pointer;
+      }
+
+      p {
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0%;
+      }
+    }
+  }
+}
